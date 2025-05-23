@@ -21,7 +21,7 @@ class CustomFieldBuilder {
 
   ////getting its field type
   late CustomField? customField = KRegisteredFields().get(field['type']);
-
+  
   void init() {
     customField?.parameters = field;
     //Calling init of custom field from here and this init will be called into the UI
